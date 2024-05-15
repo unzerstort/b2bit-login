@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FAFAFA;
+    --b2b-blue: #02274F;
+  }
+}
+
+body {
+  background-color: (var(--background));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.card {
+  position: absolute;
+  top: 180px;
+  width: 438px;
+  height: 534px;
+  padding: 55px 26.25px 40.13px 25.88px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 64px 0px #00000040;
+  background: #FFFFFF;
+}
+
+.logo {
+  height: auto;
+}
+
+.button--color {
+  background-color: var(--b2b-blue);
+}
