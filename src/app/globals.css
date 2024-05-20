@@ -36,10 +36,6 @@
   background-color: #FFFFFF;
 }
 
-.logo {
-  height: auto;
-}
-
 .button--color {
   background-color: var(--b2b-blue);
 }
