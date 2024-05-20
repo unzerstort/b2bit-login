@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-bg: #FAFAFA;
+    --white-bg: #FAFAFA;
     --b2b-blue: #02274F;
     --profile-bg: #F1F5F9;
   }
@@ -23,7 +23,7 @@
 }
 
 .signin-background--color {
-  background-color: var(--page-bg);
+  background-color: var(--white-bg);
 }
 
 .card {
@@ -34,7 +34,7 @@
   padding: 55px 26.25px 40.13px 25.88px;
   border-radius: 18px;
   box-shadow: 0px 0px 64px 0px #00000040;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .logo {
