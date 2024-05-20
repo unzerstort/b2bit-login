@@ -13,7 +13,7 @@ export default function Home() {
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e : any) {
     e.preventDefault();
 
     try {
@@ -27,11 +27,11 @@ export default function Home() {
     }
   }
 
-  function handleEmail(e) {
+  function handleEmail(e : any) {
     setEmail(e.target.value);
   }
 
-  function handlePassword(e) {
+  function handlePassword(e : any) {
     setPassword(e.target.value);
   }
 
