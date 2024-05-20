@@ -51,13 +51,4 @@ export const login = (email: string, password: string): Promise<any> => {
     });
 };
 
-export const getProfile = async () => {
-    try {
-        const response = await api.get('/auth/profile/');
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
-};
-
 export default api;
