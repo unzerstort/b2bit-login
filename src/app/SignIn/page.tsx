@@ -68,9 +68,9 @@ export default function Home() {
 
   function submitForm(email: string, password: string) {
     return new Promise<void>((resolve, reject) => {
-      resolve()
-      // login(email, password);
-      // router.push('/Profile')
+      login(email, password).then(() => {
+        resolve();
+      });
     })
   }
 }
