@@ -25,25 +25,20 @@ export default function Profile() {
         }
     }, []);
 
-    // const handleLogout = () => {
-
-    //     window.localStorage.clear();        
-    //     router.push('/SignIn');
-    // };
+    const handleLogout = () => {
+        window.localStorage.clear();        
+        router.push('/SignIn');
+    };
 
     return (
         <div className="flex-1 flex flex-col overflow-hidden">
-            {/* <NavBar onLogout={() => {
+            <NavBar onLogout={handleLogout}></NavBar>
 
-window.localStorage.clear();        
-router.push('/SignIn');
-}}></NavBar> */}
-            
             <div className="flex flex-col items-center min-h-screen profile-background--color">
-                <Card 
+                <Card
                     title="Profile picture"
                     image={
-                        <Image alt="User picture" src={userData.profilePicture} width={200} height={200}/>
+                        <Image alt="User picture" src={userData.profilePicture} width={200} height={200} />
                     }
                     content={
                         <div>
